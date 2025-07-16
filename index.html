@@ -625,14 +625,7 @@
             const color = document.getElementById('color').value;
             const quantity = document.getElementById('quantity').value;
             
-            // Create WhatsApp message
-            const message = `Halo Haneera Knitwear, saya ingin memesan:\n\nNama: ${name}\nWarna: ${color}\nJumlah: ${quantity} pcs\n\nNomor WhatsApp: ${phone}\n\nMohon info ketersediaan stock dan total pembayaran. Terima kasih!`;
             
-            // Encode message for URL
-            const encodedMessage = encodeURIComponent(message);
-            
-            // Redirect to WhatsApp
-            window.location.href = `https://wa.me/6281234567890?text=${encodedMessage}`;
         });
     </script>
 </body>
