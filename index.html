@@ -604,15 +604,7 @@
             // Display the result
             document.getElementById("countdown-hours").innerHTML = hours.toString().padStart(2, '0');
             document.getElementById("countdown-minutes").innerHTML = minutes.toString().padStart(2, '0');
-            document.getElementById("countdown-seconds").innerHTML = seconds.toString().padStart(2, '0');
-            
-            // If the count down is finished, show expired message
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("countdown-hours").innerHTML = "00";
-                document.getElementById("countdown-minutes").innerHTML = "00";
-                document.getElementById("countdown-seconds").innerHTML = "00";
-            }
+            document.getElementById("countdown-seconds").innerHTML = seconds.toString().padStart(2, '0');            
         }, 1000);
         
     </script>
